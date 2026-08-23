@@ -72,7 +72,7 @@
         /* Centerpiece Logo container */
         .logo-container { margin: 0 auto 45px auto; display: block; text-align: center; width: 100%; }
         
-        /* FIXED: EXACT TEXT ORANGE MATRIX ALIGNMENT */
+        /* FIXED: PURE ORANGE DUO-TONE MATRIX FILTER */
         .logo-img { 
             width: 75%; 
             min-width: 300px; 
@@ -80,8 +80,8 @@
             height: auto;
             display: inline-block; 
             mix-blend-mode: normal; 
-            /* Hue rotation targets the light gold tones and pushes them cleanly into your exact heading text safety orange */
-            filter: hue-rotate(348deg) brightness(1.2) contrast(1.5) saturate(1.6) drop-shadow(0px 0px 10px rgba(255, 102, 0, 0.35));
+            /* This precise filter matrix strips out all white color values, flattening the logo elements directly into pure heading text orange */
+            filter: grayscale(1) sepia(1) saturate(30) hue-rotate(345deg) brightness(0.95) contrast(1.4);
         }
         
         /* Section Title Headers */
@@ -198,7 +198,7 @@
             header { text-align: center; padding: 20px; display: flex; flex-direction: column; align-items: center; }
             .nav-right { float: none; display: block; margin-top: 10px; text-align: center; }
             .nav-right .phone-nav-link { margin-left: 0; font-size: 1.1rem; }
-            .logo-img { width: 90%; filter: hue-rotate(348deg) brightness(1.2) contrast(1.5) saturate(1.6); background: transparent; padding: 0; border-radius: 0; }
+            .logo-img { width: 90%; filter: grayscale(1) sepia(1) saturate(30) hue-rotate(345deg) brightness(0.95) contrast(1.4); background: transparent; padding: 0; border-radius: 0; }
             h2 { font-size: 1.5rem; }
             .services-text { font-size: 1.15rem; }
             .phone-action { font-size: 1.9rem; }
@@ -207,7 +207,6 @@
 </head>
 <body>
 
-    <!-- Top White Navigation Bar matching reference schema -->
     <header>
         <div class="nav-right">
             <a href="https://facebook.com" target="_blank" class="fb-nav-btn">
