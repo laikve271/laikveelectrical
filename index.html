@@ -71,28 +71,14 @@
         
         /* Centerpiece Logo container */
         .logo-container { margin: 0 auto 45px auto; display: block; text-align: center; width: 100%; }
-        
-        /* STENCIL FIX: This cuts away the white square box completely without blurring your logo lines */
-        .logo-box-stencil {
-            display: inline-block;
+        .logo-img { 
             width: 75%; 
             min-width: 300px; 
             max-width: 680px;
             height: auto;
-            background-color: #ff6600; /* Locks the color exactly to your text orange */
-            -webkit-mask: url('logo.png') no-repeat center center;
-            mask: url('logo.png') no-repeat center center;
-            -webkit-mask-size: contain;
-            mask-size: contain;
-            filter: drop-shadow(0px 0px 10px rgba(255, 102, 0, 0.4));
-        }
-        
-        /* Invisible spacer img dictates the correct height dynamics */
-        .logo-box-stencil img {
-            width: 100%;
-            height: auto;
-            visibility: hidden;
-            display: block;
+            display: inline-block; 
+            /* CORE FIX: Instructs the web engine to automatically drop the white box out of your logo.png */
+            mix-blend-mode: multiply;
         }
         
         /* Section Title Headers */
@@ -209,7 +195,7 @@
             header { text-align: center; padding: 20px; display: flex; flex-direction: column; align-items: center; }
             .nav-right { float: none; display: block; margin-top: 10px; text-align: center; }
             .nav-right .phone-nav-link { margin-left: 0; font-size: 1.1rem; }
-            .logo-box-stencil { width: 90%; background-color: #ff6600; }
+            .logo-img { width: 90%; mix-blend-mode: normal; background: #ffffff; padding: 10px; border-radius: 50%; }
             h2 { font-size: 1.5rem; }
             .services-text { font-size: 1.15rem; }
             .phone-action { font-size: 1.9rem; }
@@ -218,7 +204,6 @@
 </head>
 <body>
 
-    <!-- Top White Navigation Bar matching reference schema -->
     <header>
         <div class="nav-right">
             <a href="https://facebook.com/laikveelectrical" target="_blank" class="fb-nav-btn">
@@ -233,10 +218,7 @@
 
     <div class="main-wrapper">
         <div class="logo-container">
-            <!-- Stencil box wrapper layer extracts only the vector outline of your logo image file -->
-            <div class="logo-box-stencil">
-                <img src="logo.png" alt="Laikve Electrical Logo">
-            </div>
+            <img src="logo.png" alt="Laikve Electrical Logo" class="logo-img">
         </div>
         
         <h2>DOMESTIC, COMMERCIAL &amp; AGRICULTURAL ELECTRICAL</h2>
@@ -253,3 +235,15 @@
             <br>
             <a href="https://facebook.com/laikveelectrical" target="_blank" class="fb-action-btn">
                 <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Find us on Facebook
+            </a>
+        </div>
+
+        <p class="licence-tag">Lic: PGE 272067</p>
+        <footer>&copy; Laikve Electrical 2026</footer>
+    </div>
+
+</body>
+</html>
