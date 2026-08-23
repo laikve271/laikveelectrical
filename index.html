@@ -72,16 +72,28 @@
         /* Centerpiece Logo container */
         .logo-container { margin: 0 auto 45px auto; display: block; text-align: center; width: 100%; }
         
-        /* FIXED: EXACT TEXT ORANGE MATCH VARIABLE */
-        .logo-img { 
+        /* FIXED: BRIGHT SAFETY ORANGE COLOR COUPLING ENGINE */
+        .logo-img-wrapper {
+            display: inline-block;
             width: 75%; 
             min-width: 300px; 
             max-width: 680px;
             height: auto;
-            display: inline-block; 
-            mix-blend-mode: multiply;
-            /* Adjusted hue rotation from 345deg to 357deg to pull it away from red and lock into text gold-orange */
-            filter: sepia(1) saturate(30) hue-rotate(357deg) brightness(1.1) contrast(1.2) drop-shadow(0px 0px 10px rgba(255, 102, 0, 0.4));
+            /* Direct vector painting forces the image to reflect the exact text orange (#ff6600) */
+            background-color: #ff6600; 
+            /* Uses the shape layout of your logo file as an absolute knockout template */
+            -webkit-mask: url('logo.png') no-repeat center center;
+            mask: url('logo.png') no-repeat center center;
+            -webkit-mask-size: contain;
+            mask-size: center;
+            filter: drop-shadow(0px 0px 14px rgba(255, 102, 0, 0.5));
+        }
+        /* Hidden structural placeholder maintains image sizing height data natively */
+        .logo-img-wrapper img {
+            width: 100%;
+            height: auto;
+            visibility: hidden;
+            display: block;
         }
         
         /* Section Title Headers */
@@ -198,7 +210,7 @@
             header { text-align: center; padding: 20px; display: flex; flex-direction: column; align-items: center; }
             .nav-right { float: none; display: block; margin-top: 10px; text-align: center; }
             .nav-right .phone-nav-link { margin-left: 0; font-size: 1.1rem; }
-            .logo-img { width: 90%; mix-blend-mode: multiply; filter: sepia(1) saturate(25) hue-rotate(357deg) brightness(1.1); background: transparent; padding: 0; border-radius: 0; }
+            .logo-img-wrapper { width: 90%; background-color: #ff6600; }
             h2 { font-size: 1.5rem; }
             .services-text { font-size: 1.15rem; }
             .phone-action { font-size: 1.9rem; }
@@ -209,7 +221,7 @@
 
     <header>
         <div class="nav-right">
-            <a href="https://facebook.com" target="_blank" class="fb-nav-btn">
+            <a href="https://facebook.com/laikveelectrical" target="_blank" class="fb-nav-btn">
                 <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="16" height="16">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
@@ -220,8 +232,11 @@
     </header>
 
     <div class="main-wrapper">
+        <!-- New color-masking container block wrapper maps true orange directly to your image vectors -->
         <div class="logo-container">
-            <img src="logo.png" alt="Laikve Electrical Logo" class="logo-img">
+            <div class="logo-img-wrapper">
+                <img src="logo.png" alt="Laikve Electrical Logo">
+            </div>
         </div>
         
         <h2>DOMESTIC, COMMERCIAL &amp; AGRICULTURAL ELECTRICAL</h2>
@@ -236,17 +251,5 @@
             <a href="tel:0421393451" class="phone-action">Phone: 0421 393 451</a>
             <a href="mailto:laikve@live.com" class="email-action">Email: laikve@live.com</a>
             <br>
-            <a href="https://facebook.com" target="_blank" class="fb-action-btn">
+            <a href="https://facebook.com/laikveelectrical" target="_blank" class="fb-action-btn">
                 <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="18" height="18">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-                Find us on Facebook
-            </a>
-        </div>
-
-        <p class="licence-tag">Lic: PGE 272067</p>
-        <footer>&copy; Laikve Electrical 2026</footer>
-    </div>
-
-</body>
-</html>
