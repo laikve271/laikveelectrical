@@ -1,0 +1,4 @@
+Pages updated: 17
+Trust-strip headings: +22%
+Supporting text: +14%
+QA: PASS
