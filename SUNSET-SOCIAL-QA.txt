@@ -1,0 +1,5 @@
+Pages checked: 18
+Facebook/Open Graph image: https://laikveelectrical.com.au/laikve-homepage-hero-sunset.jpeg
+Twitter/X image: https://laikveelectrical.com.au/laikve-homepage-hero-sunset.jpeg
+Duplicate social-image tags checked: YES
+QA: PASS
