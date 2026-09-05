@@ -1,0 +1,6 @@
+Header logo final adjustment
+Pages checked: 17
+Pages changed: 17
+Header: +20% from previous displayed size
+Footer: unchanged
+Result: PASS

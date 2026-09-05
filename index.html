@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Electrician Yorke Peninsula, Mid North &amp; Adelaide Plains | Laikve Electrical</title>
-<meta content="Licensed electrician servicing Yorke Peninsula, Mid North and Adelaide Plains. Domestic, commercial and rural electrical work plus testing, verification, audits and compliance reporting." name="description"/>
+<meta content="Licensed electrician servicing Yorke Peninsula, Mid North and Adelaide Plains. Domestic, commercial and rural electrical work plus testing, verification," name="description"/>
 <link href="https://laikveelectrical.com.au/" rel="canonical"/>
 <meta content="Electrician Yorke Peninsula, Mid North &amp; Adelaide Plains | Laikve Electrical" property="og:title"/>
 <meta content="Licensed electrician servicing Yorke Peninsula, Mid North and Adelaide Plains. Domestic, commercial and rural electrical work plus testing, verification, audits and compliance reporting." property="og:description"/>
@@ -40,12 +40,11 @@
 }
 </script>
 <meta content="#080a0c" name="theme-color"/>
-<link href="laikve-favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="laikve-favicon.svg" rel="shortcut icon" type="image/svg+xml"/>
+
 <style>
 :root {
   --orange:#FF6600;
-  --orange-dark:#d95700;
+  --orange-dark:#FF6600;
   --black:#050607;
   --ink:#090c0f;
   --panel:#0d1217;
@@ -79,7 +78,7 @@ button,input,textarea,select{font:inherit}
   border-radius:7px;font-weight:900;border:1px solid transparent;transition:.2s
 }
 .btn-primary{background:var(--orange);color:#080808}
-.btn-primary:hover{background:#ff7a1a;transform:translateY(-1px)}
+.btn-primary:hover{background:#FF6600;transform:translateY(-1px)}
 .btn-outline{border-color:#36424d;color:#fff}
 .btn-outline:hover{border-color:var(--orange);color:var(--orange)}
 
@@ -627,7 +626,104 @@ header .container{width:min(calc(100% - 64px),1500px)}
   #testing-verification-compliance .tvc-list{grid-template-columns:1fr}
   #testing-verification-compliance .tvc-copy .display{font-size:clamp(2.7rem,14vw,4.3rem)}
 }
-</style></head>
+
+
+/* FINAL SITE-WIDE LOGO SIZE — 2026-09-05 */
+@media(min-width:901px){
+  .brand img{
+    width:230px !important;
+    height:54px !important;
+    transform:scale(1.63) !important;
+    transform-origin:left center !important;
+  }
+  .footer-brand img{
+    width:245px !important;
+    height:auto !important;
+    max-height:74px !important;
+    transform:scale(1.60) !important;
+    transform-origin:left center !important;
+  }
+}
+@media(max-width:900px){
+  .brand img{transform:scale(1.488) !important;transform-origin:left center !important;}
+  .footer-brand img{width:220px !important;transform:none !important;}
+}
+@media(max-width:600px){
+  .brand img{width:174px !important;height:48px !important;transform:scale(1.488) !important;transform-origin:left center !important;}
+  .footer-brand img{width:220px !important;transform:none !important;}
+}
+</style>
+<style id="laikve-final-header-logo-fix">
+/* FINAL HEADER LOGO FIX — applied consistently across all pages */
+header .brand{
+  display:flex !important;
+  align-items:center !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  overflow:visible !important;
+  flex:0 0 auto !important;
+}
+header .brand img{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  object-fit:contain !important;
+  object-position:left center !important;
+}
+@media(min-width:901px){
+  header .brand img{
+    width:230px !important;
+    height:54px !important;
+    transform:scale(1.63) !important;
+    transform-origin:left center !important;
+  }
+}
+@media(max-width:900px){
+  header .brand img{
+    width:174px !important;
+    height:48px !important;
+    transform:scale(1.24) !important;
+    transform-origin:left center !important;
+  }
+}
+</style>
+
+<style id="laikve-final-nav-size-fix">
+/* FINAL NAV SIZE FIX — applied consistently across all pages */
+@media(min-width:901px){
+  header nav a,
+  header .nav a,
+  header .main-nav a{
+    font-size:1.18em !important;
+    font-weight:700 !important;
+  }
+}
+</style>
+
+<style id="laikve-final-width-consistency">
+/* FINAL WIDTH CONSISTENCY — match homepage header/hero width site-wide */
+@media(min-width:901px){
+  header .container,
+  .hero .container{
+    width:min(calc(100% - 64px),1500px) !important;
+  }
+}
+@media(max-width:900px){
+  header .container,
+  .hero .container{
+    width:min(calc(100% - 40px),var(--max)) !important;
+  }
+}
+@media(max-width:600px){
+  header .container,
+  .hero .container{
+    width:min(calc(100% - 28px),var(--max)) !important;
+  }
+}
+</style>
+<meta property="og:image" content="https://laikveelectrical.com.au/laikve-favicon.svg">
+<link rel="icon" type="image/svg+xml" href="/laikve-favicon.svg">
+</head>
 <body>
 <header>
 <div class="container nav">
@@ -875,7 +971,7 @@ header .container{width:min(calc(100% - 64px),1500px)}
 </div>
 <a class="back" href="#top">BACK TO TOP ↑</a>
 </div>
-<div class="copyright">© <span id="year"></span> Laikve Electrical. All rights reserved.   •   <a href="privacy.html" style="color:#aab3ba;text-decoration:underline;text-underline-offset:3px;">Privacy Policy</a></div>
+<div class="copyright">© <span id="year"></span> Laikve Electrical. All rights reserved.   •   <a href="/privacy/" style="color:#aab3ba;text-decoration:underline;text-underline-offset:3px;">Privacy Policy</a></div>
 </div>
 </footer>
 <div class="mobile-bar">

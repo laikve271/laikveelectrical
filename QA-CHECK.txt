@@ -1,0 +1,5 @@
+LAIKVE ELECTRICAL FINAL QA
+
+HTML pages: 17
+Sitemap URLs: 17
+Result: PASS

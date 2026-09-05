@@ -1,0 +1,5 @@
+Pages checked: 17
+Header logo markup present: 17
+Unique header logo sources: 1
+Footer rules changed by this fix: NO
+QA: PASS

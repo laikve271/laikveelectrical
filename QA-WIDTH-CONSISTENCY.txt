@@ -1,0 +1,7 @@
+Pages checked: 17
+Pages updated: 17
+Desktop header width: matches homepage (1500px max)
+Desktop hero width: matches homepage (1500px max)
+Lower section containers: unchanged
+Tablet/mobile widths: preserved
+QA: PASS

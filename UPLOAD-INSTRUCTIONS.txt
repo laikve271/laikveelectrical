@@ -1,0 +1,21 @@
+LAIKVE ELECTRICAL — FINAL WEBSITE SEO UPGRADE
+
+This folder is the final deployment package.
+
+Upload the CONTENTS of this folder to the root of the existing GitHub Pages site.
+Keep the site's existing images/assets folders unless you are replacing the entire repository with a complete backup.
+
+Included:
+- Updated approved homepage
+- Updated Yorke Peninsula, Mid North and Adelaide Plains pages
+- Local pages for Kadina, Wallaroo, Moonta, Ardrossan, Balaklava and Port Wakefield
+- Dedicated specialist service pages
+- Testing, Verification & Compliance as a core service
+- Correct current Laikve Electrical branding on all pages
+- Correct breadcrumbs on all pages
+- Page-specific titles, descriptions, canonical URLs and social metadata
+- Service structured data
+- sitemap.xml and robots.txt
+- Internal service/location navigation
+
+Before publishing, keep a copy of the current live repository as a backup.
